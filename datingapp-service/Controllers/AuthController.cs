@@ -30,7 +30,7 @@ namespace datingapp_service.Controllers
 
         [HttpPost("register")]
         public IActionResult Register(UserRegisterDTO userRegisterDTO)
-        {
+        { 
             userRegisterDTO.UserName = userRegisterDTO.UserName.ToLower();
             if (_irepo.UserExists(userRegisterDTO.UserName))
             {
