@@ -30,5 +30,6 @@ namespace datingapp_service.datingapp.data
 
         public DbSet<Values> tbl_value { get; set; }
         public DbSet<User> tbl_User { get; set; }
-  }
+        public DbSet<Photo> tbl_Photo { get; set; }
+    }
 }
